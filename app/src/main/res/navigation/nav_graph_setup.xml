@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_setup"
+    app:startDestination="@id/businessDetailFragment">
+
+    <fragment
+        android:id="@+id/businessDetailFragment"
+        android:name="com.example.expensoryapp.views.BusinessDetailFragment"
+        android:label="fragment_business_detail"
+        tools:layout="@layout/fragment_business_detail" >
+        <action
+            android:id="@+id/action_businessDetailFragment_to_addBusinessFragment"
+            app:destination="@id/addBusinessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBusinessFragment"
+        android:name="com.example.expensoryapp.AddBusinessFragment"
+        android:label="fragment_add_business"
+        tools:layout="@layout/fragment_add_business" />
+</navigation>
